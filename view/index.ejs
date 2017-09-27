@@ -2,8 +2,16 @@
 <html>
 <head>
     <title><%= title %></title>
+   	<link rel="stylesheet" type="text/css" href="../static/style.css">
 </head>
 <body>
     <h2>this is from <%= myejs %></h2>
+    <div class="attrWrap" data-msg='this is my dataMsg'>123</div>
+    <ul>
+	    <% users.forEach(function(user){ %>
+			<li><%= user %></li>
+		<% }) %>
+	</ul>
+	<div class="attrWrap" data-msg='this is my dataMsg'>1111</div>
 </body>
 </html>
